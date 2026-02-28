@@ -18,15 +18,20 @@ NetVault is a microservices-based web application built for Optical Character Re
 ## 🚀 Quick Start: Run via Docker Hub (Recommended)
 You do not need to clone this repository or install dependencies. If you have Docker installed, you can pull the pre-built images directly from the public registry and run them immediately.
 
-**1. Run the Backend API (Port 5000):**
+**1. Pull the Images from Docker Hub:**
+```bash
+docker pull shivanand77/backend:netvault
+docker pull shivanand77/frontend:netvault
+```
+**2. Run the Backend API (Port 5000):**
 ```bash
 docker run -d -p 5000:5000 --name netvault-backend shivanand77/backend:netvault
 ```
 
-**2. Run the Frontend UI (Port 3000):**
-\`\`\`bash
+**3. Run the Frontend UI (Port 3000):**
+```bash
 docker run -d -p 3000:3000 --name netvault-frontend shivanand77/frontend:netvault
-\`\`\`
+```
 
 **3. Access the Application:**
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
@@ -37,12 +42,12 @@ Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 If you want to view the code, modify the UI, or build the images yourself:
 
 1. Clone this repository:
-   \`\`\`bash
+  ```bash
    git clone https://github.com/Shivanand-7/NetVault.git
    cd NetVault
-   \`\`\`
+   ```
 2. Build and spin up the containers using Docker Compose:
-   \`\`\`bash
+   ```bash
    docker compose up --build -d
-   \`\`\`
+   ```
 3. Open your browser and navigate to `http://localhost:3000`.
