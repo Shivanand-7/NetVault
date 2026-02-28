@@ -19,9 +19,9 @@ NetVault is a microservices-based web application built for Optical Character Re
 You do not need to clone this repository or install dependencies. If you have Docker installed, you can pull the pre-built images directly from the public registry and run them immediately.
 
 **1. Run the Backend API (Port 5000):**
-\`\`\`bash
+```bash
 docker run -d -p 5000:5000 --name netvault-backend shivanand77/backend:netvault
-\`\`\`
+```
 
 **2. Run the Frontend UI (Port 3000):**
 \`\`\`bash
